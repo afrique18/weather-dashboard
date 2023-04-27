@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <nav class="bg-dark">
+        <span class="text-center">Weather Dashboard</span>
+    </nav>
+
+    <div class="main-container container-fluid"></div>
+        <div class="row">
+            <div id="search-section" class="col-md-4">
+                <div class="card-Body">
+                    <h5>Search for a city:</h5>
+                    <form class="form-inline">
+                        <input type="search" placeholder="City name" class="form-control">
+                        <button class="btn btn-primary my-2 my-sm-0 search search-button">
+                            <i class="fas fa-search-location"></i>
+                        </button>    
+                    </form>
+                <div class="cities-list"></div>
+                </div>
+            </div>
+
+            <div class="col-mb-8 container-left-columns"> 
+                <div class="row">
+                    <div class="card card-city">
+                        <div class="card card-Body">
+                            <p class="city"></p>
+                            <p class="weather-icon"></p>
+                            <p class="temperature"></p>
+                            <p class="humidity"></p>
+                            <p class="wind"></p>
+                            <p class="uv"></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row-blue">
+                <div class="row">
+                    <div class="forecast-title">
+                        <div cbforecast>
+                            <h5>5-Day Forecast:</h5>
+                        </div>
+                    </div>
+                </div>    
+
+                <div class="row gutters">
+                    <div class="col">
+                        <div class="card forecast">
+                            <div class="card-body bg-primary">
+                            <p class="day-one-date"></p>
+                            <p class="day-one-icon"></p>
+                            <p class="day-one-temperature"></p>
+                            <p class="day-one-wind"></p>
+                            <p class="day-one-humidity"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card forecast">
+                        <div class="card-body bg-primary">
+                        <p class="day-two-date"></p>
+                        <p class="day-two-icon"></p>
+                        <p class="day-two-temperature"></p>
+                        <p class="day-two-wind"></p>
+                        <p class="day-two-humidity"></p>
+                    </div>
+
+                    <div class="col">
+                        <div class="card forecast">
+                            <div class="card-body bg-primary">
+                            <p class="day-three-date"></p>
+                            <p class="day-three-icon"></p>
+                            <p class="day-three-temperature"></p>
+                            <p class="day-three-wind"></p>
+                            <p class="day-three-humidity"></p>
+                        </div>
+
+                <div class="col">
+                    <div class="card forecast">
+                        <div class="card-body bg-primary">
+                        <p class="day-four-date"></p>
+                        <p class="day-four-icon"></p>
+                        <p class="day-four-temperature"></p>
+                        <p class="day-four-wind"></p>
+                        <p class="day-four-humidity"></p>
+                    </div>
+
+                    <div class="col">
+                        <div class="card forecast">
+                            <div class="card-body bg-primary">
+                            <p class="day-five-date"></p>
+                            <p class="day-five-icon"></p>
+                            <p class="day-five-temperature"></p>
+                            <p class="day-five-wind"></p>
+                            <p class="day-five-humidity"></p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+        <script src="./script.js"></script>  
+
+</body>
+
+</html>

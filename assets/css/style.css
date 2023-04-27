@@ -1,0 +1,33 @@
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    color: blanchedalmond;
+    font-size: 45px;
+    text-align: center;
+}
+
+#search-sction {
+    background-color: rgb(240, 252, 252);
+}
+
+.city {
+    border: none;
+}
+
+.cbforecast {
+    margin: 20px;
+}
+
+.main-container {
+    padding-bottom: 20px;
+}
+
+.row-blue {
+    background-color: rgb(240, 252, 252);
+
+}
