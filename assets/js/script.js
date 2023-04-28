@@ -47,7 +47,7 @@ $.ajax  ({
         //adds day one - day five data to webpage
         $("day-one-temperature").text("Temp: " +response.list [0].main.temp + " F");
         $(".day-one-date").html("<h6>" + dayOne + "</h6>");
-        $(".day-one-icon").html("<img src= ")
+        $(".day-one-icon").html("<img src= #")
         $(".day-one-humidity").text("Humidity: " + response.list[0].main.humidity + "%");
     
 
@@ -55,28 +55,28 @@ $.ajax  ({
 
         $("day-two-temperature").text("Temp: " +response.list [8].main.temp + " F");
         $(".day-two-date").html("<h6>" + dayOne + "</h6>");
-        $(".day-two-icon").html("<img src= ")
+        $(".day-two-icon").html("<img src= #")
         $(".day-two-humidity").text("Humidity: " + response.list[8].main.humidity + "%");
 
         var dayThree = moment(response.list[16].dt_txt).format("ddd, MM D");
 
         $("day-one-temperature").text("Temp: " +response.list [16].main.temp + " F");
         $(".day-three-date").html("<h6>" + dayOne + "</h6>");
-        $(".day-three-icon").html("<img src= ")
+        $(".day-three-icon").html("<img src= #")
         $(".day-three-humidity").text("Humidity: " + response.list[16].main.humidity + "%");
 
         var dayFour = moment(response.list[24].dt_txt).format("ddd, MM D");
 
         $("day-four-temperature").text("Temp: " +response.list [24].main.temp + " F");
         $(".day-four-date").html("<h6>" + dayOne + "</h6>");
-        $(".day-four-icon").html("<img src= ")
+        $(".day-four-icon").html("<img src= #")
         $(".day-four-humidity").text("Humidity: " + response.list[24].main.humidity + "%");
 
         var dayFive = moment(response.list[32].dt_txt).format("ddd, MM D");
 
         $("day-one-temperature").text("Temp: " +response.list [32].main.temp + " F");
         $(".day-one-date").html("<h6>" + dayOne + "</h6>");
-        $(".day-one-icon").html("<img src= ")
+        $(".day-one-icon").html("<img src= #")
         $(".day-one-humidity").text("Humidity: " + response.list[32].main.humidity + "%");
 
 })
