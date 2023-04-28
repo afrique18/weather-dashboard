@@ -4,30 +4,37 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+h1 {
+    
+}
 nav {
-    color: blanchedalmond;
-    font-size: 45px;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.846);
+    color:beige;
+    font-size: 40px;
+    width: 100%;
+    padding: 10px;
 }
 
 #search-sction {
-    background-color: rgb(240, 252, 252);
+    background-color: rgb(27, 37, 97);
 }
 
 .city {
     border: none;
 }
 
-.cbforecast {
+.forecast {
+    background-color: royalblue;
     margin: 20px;
 }
 
 .main-container {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .row-blue {
     background-color: rgb(240, 252, 252);
+
 
 }
