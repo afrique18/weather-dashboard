@@ -1,18 +1,22 @@
 console.log("hello")
+// api key
 var key = "e825520c7596bf10aa063083888a38d5"
 
 var inputEl = document.querySelector(".input");
 var searchBtn = document.querySelector(".search-btn");
 var citiesListEl = document.querySelector(".cities-list");
 
+
 var cityName = localStorage.getItem("cityNameStored");
 var urlWeather = "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid= + cityName + '&units=imperial'+ e825520c7596bf10aa063083888a38d5";
 var urlForecast = "http://api.openweathermap.org/geo/1.0/direct?q=Miami&limit=1&appid= + cityName + '&units=imperial'+ e825520c7596bf10aa063083888a38d5";
 
-function recordCityData(params) {
+// sets input value in local storage
+function recordCityData() {
     localStorage.setItem("cityNameStored", inputEl.value);
 }
 
+//append search input from local storage to cities list
 for (var i = 0; i < localStorage.length; i++) {
     $(".cities-list").append("<p>" + localStorage.getitem(localStorage.Key(i)) + "</p>");
     
@@ -24,6 +28,7 @@ $.ajax  ({
 })
 
     .then(function(response){
+        // adds weather infomation to webpage
         $(".city").html("<h2>" + response.name + "</h2>");
         $(".weather-icon").html("img src='https://openweather.org/img/w/" + response.weather[0].icon +  ".png' >");
         $(".wind").text("Wind speed: "+ response.wind.speed + "MPH");
@@ -38,7 +43,8 @@ $.ajax  ({
 
     .then(function(response){
         var dayOne = moment(response.list[0].dt_txt).format("ddd, MM D");
-
+        
+        //adds day one - day five data to webpage
         $("day-one-temperature").text("Temp: " +response.list [0].main.temp + " F");
         $(".day-one-date").html("<h6>" + dayOne + "</h6>");
         $(".day-one-icon").html("<img src= ")
